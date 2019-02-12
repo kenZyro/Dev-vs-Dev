@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "dev-vs-dev": "dev-vs-dev",
+    "default": "dev-vs-dev"
+  }
+}

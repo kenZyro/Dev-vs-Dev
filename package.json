@@ -10,7 +10,10 @@
     ]
   },
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "build": "NODE_ENV='production' webpack",
+    "firebase-init":"firebase login && firebase init",
+    "deploy":"npm run build && firebase deploy"
   },
   "author": "Prajwal",
   "license": "MIT",
@@ -20,7 +23,8 @@
     "query-string": "^6.2.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "terser": "^3.14.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
